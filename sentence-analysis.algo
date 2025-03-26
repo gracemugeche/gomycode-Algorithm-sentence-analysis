@@ -1,0 +1,38 @@
+//sentence analysis program
+
+VAR
+ Length:INTEGER
+ words:INTEGER
+ vowels:INTEGER
+ char:CHARACTER
+
+BEGIN
+
+// Initialize variables
+ length = 0  
+ words = 1  
+ vowels = 0  
+ vowels_set = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
+
+// Read a sentence character by character
+REPEAT
+ WRITE "Enter a sentence ending with a period: "
+ INPUT sentence
+UNTIL last character of sentence == '.'
+
+FOR EACH char IN sentence DO
+ length = length + 1  
+    
+ IF char == ' ' THEN
+ words = words + 1 
+ ELSE IF char IN vowels_set THEN
+ vowels = vowels + 1  
+ END IF
+END FOR
+
+//print results
+ WRITE("Sentence Length:", length)
+ WRITE("Number of Words:", words)
+ WRITE("Number of Vowels:", vowels)
+
+ END
