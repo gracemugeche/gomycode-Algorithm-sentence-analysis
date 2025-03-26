@@ -32,7 +32,7 @@ This project will be assessed based on the following:
 - **Problem-solving approach and overall code quality.**
 
 ## Author
-📌 **Grace Wambui Mugece**  
+📌 **Grace Wambui Mugeche**  
 This project was developed as part of a checkpoint assessment to showcase problem-solving and programming skills.
 
 ---
